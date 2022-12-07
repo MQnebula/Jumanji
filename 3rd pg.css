@@ -1,0 +1,32 @@
+body{
+  
+}
+
+.test-wrap{
+  padding:4rem;
+  max-width:740px;
+  margin:auto;
+}
+
+.wave-text{
+  
+  .letter-wrap;
+    position:relative;
+    top:0;
+    left:0;
+    font-size:1.25rem;
+    color:#326760;
+    line-height:1.8rem;
+  
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
