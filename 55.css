@@ -1,0 +1,184 @@
+@charset "utf-8";
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+	.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+h{
+    animation: ani 5s;
+    text-align: center;
+	 /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: green;
+}
+
+@keyframes ani{
+    from{
+        letter-spacing: 35px;
+        filter: blur(10px);
+        opacity: 0;
+    }to{
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1px;
+    }
+}
+
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+  
+body {
+    background-color: #000000;
+    background-image: linear-gradient(bottom, 
+                                    #000058 60%, 
+                                    #000033 40%);
+}
+  
+header {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+  
+.heading {
+    color: green;
+}
+  
+.title {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+  
+.cat {
+	 position: center;
+	 height: 100px;
+	 width: 10px;
+}
+ 
+ .eye {
+	 position: absolute;
+	 top: 35%;
+	 height: 30%;
+	 width: 31%;
+	 background: #A2BD3D;
+	 border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+ .eye::after {
+	 content: '';
+	 position: center;
+	 top: 0;
+	 left: 0;
+	 height: 0;
+	 width: 100%;
+	 border-radius: 0 0 50% 50Array/0Array 0 40% 40%;
+	 background: url("background 5.png");
+	 animation: blink 3s infinite ease-in;
+}
+ @keyframes blink {
+	 50% {
+		 height: 0;
+	}
+	 40% {
+		 height: 0;
+	}
+	 92.5% {
+		 height: 100%;
+	}
+	 95% {
+		 height: 0;
+	}
+	 97.5% {
+		 height: 100%;
+	}
+	 100% {
+		 height: 0;
+	}
+}
+ 
+
+ .eye--left {
+	 left: 0;
+}
+ .eye--left::before {
+	 right: -5%;
+}
+ .eye--right {
+	 right: 0;
+}
+ .eye--right::before {
+	 left: -5%;
+}
+ .eye-pupil {
+	 position: absolute;
+	 top: 25%;
+	 height: 50%;
+	 width: 20%;
+	 background: #161616;
+	 border-radius: 50%;
+	 animation: look-around 10s infinite;
+}
+ @keyframes look-around {
+	 0% {
+		 transform: translate(0);
+	}
+	 5% {
+		 transform: translate(50%, -25%);
+	}
+	 10% {
+		 transform: translate(50%, -25%);
+	}
+	 15% {
+		 transform: translate(-100%, -25%);
+	}
+	 20% {
+		 transform: translate(-100%, -25%);
+	}
+	 25% {
+		 transform: translate(0, 0);
+	}
+	 100% {
+		 transform: translate(0, 0);
+	}
+}
+ .eye--left .eye-pupil {
+	 right: 30%;
+}
+ .eye--right .eye-pupil {
+	 left: 30%;
+}
+ .eye-pupil::after {
+	 content: '';
+	 position: absolute;
+	 top: 30%;
+	 right: -5%;
+	 height: 20%;
+	 width: 35%;
+	 border-radius: 50%;
+	 background: #fff;
+}
+ 
+/* General page styling */
+
+}
+ 

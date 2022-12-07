@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectFade(obj,method,effect,speed)
+{
+    obj[method](effect, {}, speed);
+}
+
+function playMP3()
+{
+    document.getElementById('demo').play();
+}
+</script>
+<link href="index1.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	p {text-align: center;}
+	div{text-align: center}
+	
+body {
+    background-image: url(jumanji%20background%20copy.png);
+}
+</style>
+</head>
+
+<body>
+<a href="tribal-drums-african-rhythm-ethnic-percussion-typographic-music-125773.mp3"></a>
+	<img src="sticker jumanji copy.png" width="1920" height="1080" alt="" onClick="playMP3()">
+<p2> <strong><a href="Eighth pg.html"> Credits </a></strong> </p2>
+<font size="+2"><p id = "codespeedy"> <a href="Second pg.html" onClick="MM_DW_effectFade($(this),'show','fade',4000)">Begin </a></p></font>
+<audio id="demo" src="tribal-drums-african-rhythm-ethnic-percussion-typographic-music-125773.mp3"></audio>
+	<script type="text/javascript">
+	$(document). ready(function(){
+		$('#codespeedy').hide().delay(3000).fadeIn(2200);
+	
+	});
+	</script>
+</body>
+</html>
